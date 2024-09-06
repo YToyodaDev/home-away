@@ -21,10 +21,11 @@ const Description = ({ description }: { description: string }) => {
       <p className='text-muted-foreground font-light leading-loose '>
         {displayDescription}
       </p>
-      {}
-      <Button variant='link' className='pl-0 ' onClick={toggleDescription}>
-        {displayDescription ? 'show less' : 'show more'}
-      </Button>
+      {isLongDescription && (
+        <Button variant='link' className='pl-0 ' onClick={toggleDescription}>
+          {isFullDescriptionShown ? 'show less' : 'show more'}
+        </Button>
+      )}
     </article>
   );
 };
