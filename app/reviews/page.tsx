@@ -35,6 +35,7 @@ async function ReviewsPage() {
     </>
   );
 }
+export default ReviewsPage;
 
 export const DeleteReview = ({ reviewId }: { reviewId: string }) => {
   const deleteReview = deleteReviewAction.bind(null, { reviewId });
@@ -44,5 +45,3 @@ export const DeleteReview = ({ reviewId }: { reviewId: string }) => {
     </FormContainer>
   );
 };
-
-export default ReviewsPage;
