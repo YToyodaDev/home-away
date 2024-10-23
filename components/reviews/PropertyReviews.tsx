@@ -1,7 +1,7 @@
 import { fetchPropertyReviews } from '@/utils/actions';
 import Title from '@/components/properties/Title';
 import ReviewCard from '@/components/reviews/ReviewCard';
-import { DeleteReview } from '@/app/reviews/page';
+import { DeleteReview } from '@/components/reviews/DeleteReviews';
 // import ReviewCard from './ReviewCard';
 
 async function PropertyReviews({ propertyId }: { propertyId: string }) {
