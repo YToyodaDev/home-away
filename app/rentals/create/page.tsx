@@ -24,13 +24,13 @@ function CreatePropertyPage(): React.ReactNode {
               name='name'
               type='text'
               label='Name (20 limit)'
-              defaultValue='Cabin in Latvia'
+              placeholder='Cabin '
             />
             <FormInput
               name='tagline'
               type='text '
               label='Tagline (30 limit)'
-              defaultValue='Dream Getaway Awaits You Here!'
+              placeholder='cozy '
             />
             <PriceInput />
             <CategoriesInput />
