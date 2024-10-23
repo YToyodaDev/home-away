@@ -50,7 +50,7 @@ async function RentalsPage() {
               orderTotalSum,
             } = rental;
             return (
-              <TableRow>
+              <TableRow key={propertyId}>
                 <TableCell>
                   <Link
                     href={`/properties/${propertyId}`}
